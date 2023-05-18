@@ -1,0 +1,10 @@
+requests
+curl_cffi
+fake_useragent
+elevenlabs
+selenium
+numpy
+pillow
+moviepy
+pytube
+pydub
