@@ -5,7 +5,8 @@ import re
 import discord
 import time
 import traceback
-
+import os
+from dotenv import load_dotenv
 from discord.ext import commands
 
 from functions.image_downloader import download_images
@@ -17,7 +18,9 @@ from functions.zoom import zoom_in_effect
 from functions.resize_images import resize_images
 from functions.music import download_music
 
-TOKEN = 'ODIwMTQ2NjIzMDk5MDQzODYx.G_rSrT.bROHLlYvMQo0ZNdOArKKtc8QpA8DxMjXJl8Pzk'
+load_dotenv()
+
+token = os.getenv('TOKEN')
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
